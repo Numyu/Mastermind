@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+}
+
+.all-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.board{
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.colors-and-round{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.check-and-toggle{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+body.dark{
+    background: #1A191E;
+}

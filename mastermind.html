@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ## HEAD ## -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/colors-and-round.css">
+    <link rel="stylesheet" href="./css/check-and-toggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<!-- ## BODY ## -->
+<body class="light">
+
+    <div class="all-elements">
+
+        <div class="board">
+            <div class="display-colors">
+                <div class="circles-line" id="board-line-1">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-2">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-3">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-4">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-5">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-6">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-7">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-8">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-9">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+                <div class="circles-line" id="board-line-10">
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                    <div class="color-circle"></div>
+                </div>
+            </div>
+
+            <div class="display-clues">
+                <div class="clues-line" id="clue-line-1">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-2">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-3">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-4">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-5">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-6">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-7">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-8">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-9">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+                <div class="clues-line" id="clue-line-10">
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                    <div class="clue-circle"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="colors-and-round">
+            <div class="colors-board">
+                <button class="color-button" id="red"></button>
+                <button class="color-button" id="yellow"></button>
+                <button class="color-button" id="green"></button>
+                <button class="color-button" id="blue"></button>
+                <button class="color-button" id="purple"></button>
+            </div>
+
+            <div class="round-number"><p>1</p></div>
+        </div>
+        
+
+        <div class="check-and-toggle">
+            <button class="check-button">GO !</button>
+
+            <button class="button-toggle"><img id="moon-img" src="./img/moon.png" alt="Moon Icon"></button>
+        </div>
+
+    </div>
+    
+    
+    <!-- ~~ JavaScript ~~ -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

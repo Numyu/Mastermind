@@ -1,0 +1,89 @@
+.display-colors{
+    width: 350px;
+    height: 720px;
+    
+    background: #F0F0F0;
+
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.circles-line{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.color-circle{
+    width: 50px;
+    height: 50px;
+
+    background: #F0F0F0;
+
+    border: 2px solid #1A191E;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+/* ------------------------------------------------------ */
+
+
+.display-clues{
+    width: 59px;
+    height: 688px;  
+
+    background: #F0F0F0;
+
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;    
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clues-line{
+    width: 29px;
+    height: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.clue-circle{
+    width: 12px;
+    height: 12px;
+
+    background: #F0F0F0;
+
+    border: 2px solid #1A191E;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+/* ------------------------------------------------------ */
+
+
+body.dark .display-colors{
+    background: #2D2C32;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .color-circle{
+    background: #2D2C32;
+    border: 2px solid #FFFFFF;
+}
+
+body.dark .display-clues{
+    background: #2D2C32;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .clue-circle{
+    background: #2D2C32;
+    border: 2px solid #FFFFFF;
+}
